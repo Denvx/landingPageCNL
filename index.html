@@ -108,74 +108,75 @@
     line-height: 1.4;
   }
 
-  
-    html {
-      scroll-behavior: smooth;
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Toast Notification */
+  .toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+
+  .custom-toast {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #ffc107;
+    min-width: 300px;
+    animation: slideIn 0.3s ease-out;
+  }
+
+  .custom-toast.hide {
+    animation: slideOut 0.3s ease-out forwards;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(400px);
+      opacity: 0;
     }
 
-    /* Toast Notification */
-    .toast-container {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 9999;
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+      opacity: 1;
     }
 
-    .custom-toast {
-      background: #1a1a1a;
-      color: #fff;
-      padding: 15px 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      border-left: 4px solid #ffc107;
-      min-width: 300px;
-      animation: slideIn 0.3s ease-out;
+    to {
+      transform: translateX(400px);
+      opacity: 0;
     }
+  }
 
-    .custom-toast.hide {
-      animation: slideOut 0.3s ease-out forwards;
-    }
+  .toast-header-custom {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #ffc107;
+  }
 
-    @keyframes slideIn {
-      from {
-        transform: translateX(400px);
-        opacity: 0;
-      }
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
+  .toast-header-custom i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+  }
 
-    @keyframes slideOut {
-      from {
-        transform: translateX(0);
-        opacity: 1;
-      }
-      to {
-        transform: translateX(400px);
-        opacity: 0;
-      }
-    }
-
-    .toast-header-custom {
-      display: flex;
-      align-items: center;
-      margin-bottom: 8px;
-      font-weight: 600;
-      color: #ffc107;
-    }
-
-    .toast-header-custom i {
-      margin-right: 8px;
-      font-size: 1.2rem;
-    }
-
-    .toast-body-custom {
-      font-size: 0.9rem;
-      line-height: 1.4;
-    }
-  
+  .toast-body-custom {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
 </style>
 
 
@@ -1192,7 +1193,7 @@
                 <i class="bi bi-palette"></i>
               </div>
               <h3>
-                <a href="#">
+                <a href="service-details.html">
                   Identidade <span>Visual</span>
                 </a>
               </h3>
@@ -1209,7 +1210,7 @@
                 <i class="bi bi-gem"></i>
               </div>
               <h3>
-                <a href="#">
+                <a href="service-details.html">
                   Design para <span>Redes Sociais</span>
                 </a>
               </h3>
@@ -1226,7 +1227,7 @@
                 <i class="bi bi-megaphone"></i>
               </div>
               <h3>
-                <a href="#">
+                <a href="service-details.html">
                   Criação de <span>Conteúdo</span>
                 </a>
               </h3>
@@ -1243,7 +1244,7 @@
                 <i class="bi bi-camera-video"></i>
               </div>
               <h3>
-                <a href="#">
+                <a href="portfolio-details.html">
                   Motion <span>Design</span>
                 </a>
               </h3>
@@ -1259,7 +1260,7 @@
                 <i class="bi bi-graph-up"></i>
               </div>
               <h3>
-                <a href="#">
+                <a href="service-details.html">
                   Estratégia <span>Visual</span>
                 </a>
               </h3>
@@ -1275,7 +1276,7 @@
                 <i class="bi bi-code-slash"></i>
               </div>
               <h3>
-                <a href="#">
+                <a href="service-details.html">
                   Design para <span>Web</span>
                 </a>
               </h3>
@@ -1535,16 +1536,21 @@
   <footer id="footer" class="footer position-relative">
 
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span>
+      <div class="copyright text-center">
+        <p>
+          © <span>2026</span>
+          <strong class="px-1 sitename">Ricardo Cannela</strong>
+          <span>— Todos os direitos reservados</span>
         </p>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+
+      <div class="credits text-center">
+        <p>
+          Motion Design & Social Media •
+          <a href="https://www.instagram.com/ricardocannela/" target="_blank">
+            @ricardocannela
+          </a>
+        </p>
       </div>
     </div>
 
@@ -1574,28 +1580,28 @@
 
   <!-- Cole isso ANTES do fechamento do </body> -->
 
-<!-- Toast Container -->
-<div class="toast-container" id="toastContainer"></div>
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
 
-<!-- Script do Toast (adicione junto com os outros scripts) -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Script para redes sociais não utilizadas
-    const socialNotUsed = document.querySelectorAll('.social-not-used');
-    
-    socialNotUsed.forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        showToast();
+  <!-- Script do Toast (adicione junto com os outros scripts) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Script para redes sociais não utilizadas
+      const socialNotUsed = document.querySelectorAll('.social-not-used');
+
+      socialNotUsed.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          showToast();
+        });
       });
-    });
 
-    function showToast() {
-      const toastContainer = document.getElementById('toastContainer');
-      
-      const toast = document.createElement('div');
-      toast.className = 'custom-toast';
-      toast.innerHTML = `
+      function showToast() {
+        const toastContainer = document.getElementById('toastContainer');
+
+        const toast = document.createElement('div');
+        toast.className = 'custom-toast';
+        toast.innerHTML = `
         <div class="toast-header-custom">
           <i class="bi bi-info-circle"></i>
           Rede Social Indisponível
@@ -1605,19 +1611,19 @@
           Entre em contato pelo Instagram: <strong>@ricardocannela</strong>
         </div>
       `;
-      
-      toastContainer.appendChild(toast);
-      
-      // Remove o toast após 4 segundos
-      setTimeout(() => {
-        toast.classList.add('hide');
+
+        toastContainer.appendChild(toast);
+
+        // Remove o toast após 4 segundos
         setTimeout(() => {
-          toast.remove();
-        }, 300);
-      }, 4000);
-    }
-  });
-</script>
+          toast.classList.add('hide');
+          setTimeout(() => {
+            toast.remove();
+          }, 300);
+        }, 4000);
+      }
+    });
+  </script>
 
 </body>
 
