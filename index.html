@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Creative Designer & Social Media Specialist</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/KA MOD1.png" rel="icon">
+  <link href="assets/img/KA MOD 3.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: SnapFolio
+  * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
+  * Updated: Jul 21 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Toast Notification */
+  .toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+
+  .custom-toast {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #ffc107;
+    min-width: 300px;
+    animation: slideIn 0.3s ease-out;
+  }
+
+  .custom-toast.hide {
+    animation: slideOut 0.3s ease-out forwards;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(400px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    to {
+      transform: translateX(400px);
+      opacity: 0;
+    }
+  }
+
+  .toast-header-custom {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #ffc107;
+  }
+
+  .toast-header-custom i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+  }
+
+  .toast-body-custom {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Toast Notification */
+    .toast-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 9999;
+    }
+
+    .custom-toast {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      border-left: 4px solid #ffc107;
+      min-width: 300px;
+      animation: slideIn 0.3s ease-out;
+    }
+
+    .custom-toast.hide {
+      animation: slideOut 0.3s ease-out forwards;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(400px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideOut {
+      from {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      to {
+        transform: translateX(400px);
+        opacity: 0;
+      }
+    }
+
+    .toast-header-custom {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #ffc107;
+    }
+
+    .toast-header-custom i {
+      margin-right: 8px;
+      font-size: 1.2rem;
+    }
+
+    .toast-body-custom {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+  
+</style>
+
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="#" class="twitter social-not-used"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook social-not-used"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/ricardocannela/" target="_blank" class="instagram"><i
+            class="bi bi-instagram"></i></a>
+        <a href="#" class="google-plus social-not-used"><i class="bi bi-skype"></i></a>
+        <a href="#" class="linkedin social-not-used"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="background-elements">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+      </div>
+
+      <div class="hero-content">
+
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+              <div class="hero-text">
+                <h1>Snap<span class="accent-text">Folio</span></h1>
+                <h2>Ricardo Carvalho</h2>
+                <p class="lead">
+                  I'm a
+                  <span class="typed"
+                    data-typed-items="Graphic Designer, Social Media Designer, Motion Designer, Creative Professional"></span>
+                </p>
+
+                <p class="description">Apaixonado por transformar ideias em criações visuais impactantes, unindo design
+                  criativo e estratégia para dar vida à identidade da sua marca.</p>
+
+                <div class="hero-actions">
+                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                  <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+
+                <div class="social-links">
+                  <a href="#"><i class="bi bi-dribbble"></i></a>
+                  <a href="#"><i class="bi bi-behance"></i></a>
+                  <a href="#"><i class="bi bi-github"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="hero-visual">
+                <div class="profile-container">
+                  <div class="profile-background"></div>
+                  <img src="assets/img/profile/EU2.png" alt="Alexander Chen" class="profile-image">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="profile-image">
+                  <img src="assets/img/profile/profile-square-32.png" alt="Profile Image" class="img-fluid">
+                </div>
+                <div class="profile-badge">
+                  <i class="bi bi-check-circle-fill"></i>
+                </div>
+              </div>
+
+              <div class="profile-content">
+                <h3>Paulo Ricardo </h3>
+                <p class="profession">Graphic Designer & Social Media Specialist</p>
+
+                <div class="contact-links">
+                  <a href="mailto:kavlastudio@hotmail.com" class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    kavlastudio@hotmail.com
+                  </a>
+                  <a href="tel:+5575983696314" class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    +55 (75) 9 8369-6314
+                  </a>
+                  <a href="https://www.google.com/maps/place/Riach%C3%A3o+do+Jacu%C3%ADpe,+BA,+44640-000/@-11.8036833,-39.3833199,3a,75y,45.14h,88.98t/data=!3m7!1e1!3m5!1sEUEPuN3SnsHBBkK8zcSjKg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D1.017571989594984%26panoid%3DEUEPuN3SnsHBBkK8zcSjKg%26yaw%3D45.140615337373234!7i16384!8i8192!4m15!1m8!3m7!1s0x71486c9c4cf8f65:0x74d93108f1c807f7!2sRiach%C3%A3o+do+Jacu%C3%ADpe,+BA,+44640-000!3b1!8m2!3d-11.8094253!4d-39.3830444!16s%2Fg%2F11bxfwk7nr!3m5!1s0x71486c9c4cf8f65:0x74d93108f1c807f7!8m2!3d-11.8094253!4d-39.3830444!16s%2Fg%2F11bxfwk7nr?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"
+                    class="contact-item" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-geo-alt"></i>
+                    Riachão do Jacuípe, BA
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <div class="section-header">
+                <span class="badge-text">Conheça um pouco mais</span>
+                <h2>Apaixonado por design visual e expressão criativa</h2>
+              </div>
+
+              <div class="description">
+                <p>
+                  Sou designer gráfico e social media, focado em criar conteúdos visuais fortes e impactantes.
+                  Meu trabalho une criatividade, estratégia e identidade visual para ajudar marcas a se
+                  destacarem no digital.
+                </p>
+
+                <p>
+                  Atuo com design para redes sociais, motion graphics e materiais visuais para eventos,
+                  transformando ideias em criações que comunicam, engajam e deixam marca.
+                </p>
+              </div>
+
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <div class="stat-number">150+</div>
+                  <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">5+</div>
+                  <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">98%</div>
+                  <div class="stat-label">Client Satisfaction</div>
+                </div>
+              </div>
+
+              <div class="details-grid">
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">Especialização</span>
+                    <span class="detail-value">Design Gráfico & Social Media</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Nível de Experiência</span>
+                    <span class="detail-value">Profissional Criativo</span>
+                  </div>
+                </div>
+
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">Atuação</span>
+                    <span class="detail-value">Redes Sociais, Motion Design e Eventos</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Idiomas</span>
+                    <span class="detail-value">Português</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cta-section">
+                <a href="#" class="btn btn-primary">
+                  <i class="bi bi-download"></i>
+                  Download Resume
+                </a>
+                <a href="#" class="btn btn-outline">
+                  <i class="bi bi-chat-dots"></i>
+                  Let's Talk
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="stats-wrapper">
+              <div class="stats-item hover-animation" data-aos="zoom-in" data-aos-delay="150">
+                <div class="icon-wrapper">
+                  <i class="bi bi-emoji-smile"></i>
+                </div>
+                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Happy Clients</p>
+              </div><!-- End Stats Item -->
+
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-wrapper">
+                  <i class="bi bi-journal-richtext"></i>
+                </div>
+                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Projects</p>
+              </div><!-- End Stats Item -->
+
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="250">
+                <div class="icon-wrapper">
+                  <i class="bi bi-headset"></i>
+                </div>
+                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Hours Of Support</p>
+              </div><!-- End Stats Item -->
+
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-wrapper">
+                  <i class="bi bi-people"></i>
+                </div>
+                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Hard Workers</p>
+              </div><!-- End Stats Item -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Habilidades</h2>
+        <p>Competências criativas focadas em design visual, social media e conteúdos de alto impacto.</p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <!-- Coluna 1 -->
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+              <h3>Design & Visual</h3>
+
+              <div class="skills-animation">
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Design Gráfico</h4>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">
+                    Criação de artes visuais impactantes com foco em identidade e comunicação.
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Social Media Design</h4>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">
+                    Criação de conteúdos visuais estratégicos para redes sociais.
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Identidade Visual</h4>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">
+                    Desenvolvimento de identidade visual forte e consistente para marcas.
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna 2 -->
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+              <h3>Conteúdo & Motion</h3>
+
+              <div class="skills-animation">
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Motion Design</h4>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">
+                    Animações e motions para redes sociais, stories e campanhas.
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Flyers & Eventos</h4>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">
+                    Criação de materiais visuais para eventos, festas e lançamentos.
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Criação de Conteúdo</h4>
+                    <span class="skill-percentage">88%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">
+                    Conteúdos visuais criativos que geram engajamento e impacto.
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Skills Section -->
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resumo Profissional</h2>
+        <p>Experiência criativa focada em design visual, social media e produção de conteúdos impactantes.</p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <!-- Left column -->
+          <div class="col-lg-4">
+            <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
+
+              <div class="profile-img mb-4">
+                <img src="assets/img/profile/profile-square-3.png" alt="Ricardo Cannela" class="img-fluid rounded">
+              </div>
+
+              <h3>Perfil Profissional</h3>
+              <p>
+                Designer gráfico e social media, apaixonado por criar identidades visuais fortes e conteúdos criativos
+                que conectam marcas ao seu público. Atua com design para redes sociais, motion design e materiais para
+                eventos.
+              </p>
+
+              <h3 class="mt-4">Informações de Contato</h3>
+              <ul class="contact-info list-unstyled">
+                <li><i class="bi bi-geo-alt"></i> Riachão do Jacuípe - BA</li>
+                <li><i class="bi bi-envelope"></i> kavlastudio@hotmail.com</li>
+                <li><i class="bi bi-instagram"></i> https://www.instagram.com/ricardocannela/</li>
+              </ul>
+
+              <div class="skills-animation mt-4">
+                <h3>Principais Competências</h3>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>Design Gráfico</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>Social Media Design</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>Motion Design</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Right column -->
+          <div class="col-lg-8 ps-4 ps-lg-5">
+
+            <!-- Experience -->
+            <div class="resume-section" data-aos="fade-up">
+              <h3><i class="bi bi-briefcase me-2"></i>Experiência</h3>
+
+              <div class="resume-item">
+                <h4>Designer Gráfico & Social Media</h4>
+                <h5>2021 - Atual</h5>
+                <p class="company"><i class="bi bi-building"></i> Freelancer</p>
+                <ul>
+                  <li>Criação de conteúdos visuais para redes sociais</li>
+                  <li>Desenvolvimento de artes para eventos, festas e campanhas</li>
+                  <li>Produção de motion graphics para posts e stories</li>
+                  <li>Criação e fortalecimento de identidade visual para marcas</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Designer Criativo</h4>
+                <h5>2020 - 2021</h5>
+                <p class="company"><i class="bi bi-building"></i> Projetos Independentes</p>
+                <ul>
+                  <li>Desenvolvimento de flyers, banners e materiais gráficos</li>
+                  <li>Criação de layouts visuais para redes sociais</li>
+                  <li>Apoio visual para eventos e projetos locais</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
+              <h3><i class="bi bi-mortarboard me-2"></i>Formação</h3>
+
+              <div class="resume-item">
+                <h4>Design Gráfico</h4>
+                <p class="company"><i class="bi bi-building"></i> Cursos e Aprendizado Prático</p>
+                <p>
+                  Formação baseada em prática, estudos independentes e projetos reais
+                  voltados para design visual e social media.
+                </p>
+              </div>
+            </div>
+
+            <!-- Extras -->
+            <div class="resume-section" data-aos="fade-up" data-aos-delay="200">
+              <h3><i class="bi bi-award me-2"></i>Diferenciais</h3>
+
+              <div class="resume-item">
+                <ul>
+                  <li>Forte identidade visual</li>
+                  <li>Criatividade aplicada a resultados</li>
+                  <li>Foco em impacto visual e engajamento</li>
+                  <li>Experiência com eventos e social media</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Resume Section -->
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfólio</h2>
+        <p>Uma seleção de projetos visuais e criativos produzidos para redes sociais, eventos e marcas.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row">
+            <div class="col-lg-3 filter-sidebar">
+              <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
+                <ul class="portfolio-filters isotope-filters">
+                  <li data-filter="*" class="filter-active">Todos</li>
+                  <li data-filter=".filter-design">Design Gráfico</li>
+                  <li data-filter=".filter-social">Social Media</li>
+                  <li data-filter=".filter-motion">Motion</li>
+                  <li data-filter=".filter-event">Eventos</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-9">
+              <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                <!-- Design Gráfico -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/vagem.png" class="img-fluid" alt="Design Gráfico" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Design Gráfico</span>
+                        <h4>Flyer de Evento</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/vagem.png" class="glightbox" title="Flyer de Evento"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details.html" title="Mais Detalhes"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/DESTINO DA SORTE 8.png" class="img-fluid" alt="Design Gráfico"
+                      loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Design Gráfico</span>
+                        <h4>Flyer de Evento</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/DESTINO DA SORTE 8.png" class="glightbox"
+                            title="Flyer de Evento"><i class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details.html" title="Mais Detalhes"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Portfolio Item -->
+
+                <!-- Motion Design -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
+                  <div class="portfolio-wrap">
+                    <video class="img-fluid" controls>
+                      <source src="assets/img/portfolio/motion5.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Motion</span>
+                        <h4>Motion para Stories</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/motion5.mp4" class="glightbox" title="Motion para Stories">
+                            <i class="bi bi-plus-lg"></i>
+                          </a>
+                          <a href="portfolio-details.html" title="Mais Detalhes">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
+                  <div class="portfolio-wrap">
+                    <video class="img-fluid" controls>
+                      <source src="assets/img/portfolio/motion6.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Motion</span>
+                        <h4>Motion para Stories</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/motion6.mp4" class="glightbox" title="Motion para Stories">
+                            <i class="bi bi-plus-lg"></i>
+                          </a>
+                          <a href="portfolio-details.html" title="Mais Detalhes">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Portfolio Item -->
+
+                <!-- Design Gráfico -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/CARD-APRESENTAÇÃO_01.jpg" class="img-fluid" alt="Design Gráfico"
+                      loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Design Gráfico</span>
+                        <h4>Flyer de Evento</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/CARD-APRESENTAÇÃO_01.jpg" class="glightbox"
+                            title="Flyer de Evento"><i class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details.html" title="Mais Detalhes"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/CARD-APRESENTAÇÃO_02.jpg" class="img-fluid" alt="Design Gráfico"
+                      loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Design Gráfico</span>
+                        <h4>Flyer de Evento</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/CARD-APRESENTAÇÃO_02.jpg" class="glightbox"
+                            title="Flyer de Evento"><i class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details.html" title="Mais Detalhes"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Portfolio Item -->
+
+                <!-- Social Media Post -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-social">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/CARADÁPIO BURGERS.jpg" class="img-fluid" alt="Social Media Post"
+                      loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Social Media</span>
+                        <h4>Post Criativo</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/CARADÁPIO BURGERS.jpg" class="glightbox"
+                            title="Post Criativo"><i class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details.html" title="Mais Detalhes"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-social">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/social INTERATIVO.png" class="img-fluid" alt="Social Media Post"
+                      loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Social Media</span>
+                        <h4>Post Criativo</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/social INTERATIVO.png" class="glightbox"
+                            title="Post Criativo"><i class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details.html" title="Mais Detalhes"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-social">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/social FECHADOS.jpg" class="img-fluid" alt="Social Media Post"
+                      loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Social Media</span>
+                        <h4>Post Criativo</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/social FECHADOS.jpg" class="glightbox" title="Post Criativo"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details.html" title="Mais Detalhes"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-social">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/social DELIVERY ON.jpg" class="img-fluid" alt="Social Media Post"
+                      loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Social Media</span>
+                        <h4>Post Criativo</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/social DELIVERY ON.jpg" class="glightbox"
+                            title="Post Criativo"><i class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details.html" title="Mais Detalhes"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Portfolio Item -->
+
+                <!-- Motion Design -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
+                  <div class="portfolio-wrap">
+                    <video class="img-fluid" controls>
+                      <source src="assets/img/portfolio/motion HORÁRIO DE FUNCIONAMENTO.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Motion</span>
+                        <h4>Motion para Stories</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/motion HORÁRIO DE FUNCIONAMENTO.mp4" class="glightbox"
+                            title="Motion para Stories">
+                            <i class="bi bi-plus-lg"></i>
+                          </a>
+                          <a href="portfolio-details.html" title="Mais Detalhes">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
+                  <div class="portfolio-wrap">
+                    <video class="img-fluid" controls>
+                      <source src="assets/img/portfolio/motion KIT FESTA 1000 REAIS.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Motion</span>
+                        <h4>Motion para Stories</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/motion KIT FESTA 1000 REAIS.mp4" class="glightbox"
+                            title="Motion para Stories">
+                            <i class="bi bi-plus-lg"></i>
+                          </a>
+                          <a href="portfolio-details.html" title="Mais Detalhes">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Portfolio Item -->
+
+                <!-- Eventos -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-event">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/unificadas.jpg" class="img-fluid" alt="Evento" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Eventos</span>
+                        <h4>Arte de Evento</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/unificadas.jpg" class="glightbox" title="Arte de Evento"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details.html" title="Mais Detalhes"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-event">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/igreja.jpg" class="img-fluid" alt="Evento" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Eventos</span>
+                        <h4>Arte de Evento</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/igreja.jpg" class="glightbox" title="Arte de Evento"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details.html" title="Mais Detalhes"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Portfolio Item -->
+
+                <!-- identidade visual - Design Gráfico 2 -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/logo veloz.webp" class="img-fluid" alt="Design Gráfico"
+                      loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Design Gráfico</span>
+                        <h4>Identidade Visual</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/logo veloz.webp" class="glightbox" title="Identidade Visual"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details.html" title="Mais Detalhes"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/identidade visual.png" class="img-fluid" alt="Design Gráfico"
+                      loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Design Gráfico</span>
+                        <h4>Identidade Visual</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/identidade visual.png" class="glightbox"
+                            title="Identidade Visual"><i class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details.html" title="Mais Detalhes"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/strong logo.webp" class="img-fluid" alt="Design Gráfico"
+                      loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Design Gráfico</span>
+                        <h4>Identidade Visual</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/strong logo.webp" class="glightbox" title="Identidade Visual"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details.html" title="Mais Detalhes"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/strong.webp" class="img-fluid" alt="Design Gráfico" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Design Gráfico</span>
+                        <h4>Identidade Visual</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/strong.webp" class="glightbox" title="Identidade Visual"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details.html" title="Mais Detalhes"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Portfolio Item -->
+
+                <!-- Motion Design -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
+                  <div class="portfolio-wrap">
+                    <video class="img-fluid" controls>
+                      <source src="assets/img/portfolio/motion7.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Motion</span>
+                        <h4>Motion para Stories</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/motion7.mp4" class="glightbox" title="Motion para Stories">
+                            <i class="bi bi-plus-lg"></i>
+                          </a>
+                          <a href="portfolio-details.html" title="Mais Detalhes">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
+                  <div class="portfolio-wrap">
+                    <video class="img-fluid" controls>
+                      <source src="assets/img/portfolio/motion8.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Motion</span>
+                        <h4>Motion para Stories</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/motion8.mp4" class="glightbox" title="Motion para Stories">
+                            <i class="bi bi-plus-lg"></i>
+                          </a>
+                          <a href="portfolio-details.html" title="Mais Detalhes">
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Portfolio Item -->
+              </div><!-- End Portfolio Container -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Serviços</h2>
+        <p>Soluções criativas em design e conteúdo visual para fortalecer marcas e gerar impacto nas redes digitais.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="service-header">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-md-12">
+              <div class="service-intro">
+                <h2 class="service-heading">
+                  <div>Design criativo</div>
+                  <div><span>que conecta marcas e pessoas</span></div>
+                </h2>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="service-summary">
+                <p>
+                  Criação de soluções visuais estratégicas que unem criatividade, identidade e comunicação clara para
+                  destacar sua marca no digital.
+                </p>
+                <a href="#portfolio" class="service-btn">
+                  Ver Trabalhos
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-palette"></i>
+              </div>
+              <h3>
+                <a href="#">
+                  Identidade <span>Visual</span>
+                </a>
+              </h3>
+              <p>
+                Criação de identidade visual completa para marcas, com foco em personalidade, coerência e reconhecimento
+                visual.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-gem"></i>
+              </div>
+              <h3>
+                <a href="#">
+                  Design para <span>Redes Sociais</span>
+                </a>
+              </h3>
+              <p>
+                Artes criativas e estratégicas para Instagram e outras plataformas, aumentando engajamento e presença
+                digital.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-megaphone"></i>
+              </div>
+              <h3>
+                <a href="#">
+                  Criação de <span>Conteúdo</span>
+                </a>
+              </h3>
+              <p>
+                Desenvolvimento de conteúdo visual alinhado à estratégia da marca, com foco em comunicação clara e
+                atrativa.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-camera-video"></i>
+              </div>
+              <h3>
+                <a href="#">
+                  Motion <span>Design</span>
+                </a>
+              </h3>
+              <p>
+                Animações e vídeos curtos para redes sociais, stories e anúncios, trazendo mais dinamismo ao conteúdo.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <h3>
+                <a href="#">
+                  Estratégia <span>Visual</span>
+                </a>
+              </h3>
+              <p>
+                Planejamento visual para fortalecer a identidade da marca e manter consistência em todos os canais.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h3>
+                <a href="#">
+                  Design para <span>Web</span>
+                </a>
+              </h3>
+              <p>
+                Criação de layouts modernos e responsivos para sites e landing pages, focados em estética e usabilidade.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Depoimentos</h2>
+        <p>O que clientes e parceiros dizem sobre o trabalho criativo e profissional de Ricardo Cannela.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="testimonial-masonry">
+
+          <div class="testimonial-item" data-aos="fade-up">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>O trabalho do Ricardo elevou completamente a identidade visual da nossa marca nas redes sociais.
+                Criatividade, agilidade e muito profissionalismo.</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="assets/img/person/person-f-7.webp" alt="Cliente">
+                </div>
+                <div class="client-details">
+                  <h3>Ana Beatriz</h3>
+                  <span class="position">Empreendedora</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>Além de um design impecável, o Ricardo entende exatamente o que a marca precisa comunicar.
+                O engajamento das nossas postagens aumentou bastante.</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="assets/img/person/person-m-7.webp" alt="Cliente">
+                </div>
+                <div class="client-details">
+                  <h3>Lucas Ferreira</h3>
+                  <span class="position">Gestor de Marketing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>As artes criadas para nossos eventos sempre chamam atenção. Um profissional comprometido,
+                criativo e muito organizado.</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="assets/img/person/person-f-8.webp" alt="Cliente">
+                </div>
+                <div class="client-details">
+                  <h3>Mariana Costa</h3>
+                  <span class="position">Produtora de Eventos</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>Excelente comunicação e entregas sempre dentro do prazo.
+                Recomendo o trabalho do Ricardo sem nenhuma dúvida.</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="assets/img/person/person-m-8.webp" alt="Cliente">
+                </div>
+                <div class="client-details">
+                  <h3>Pedro Almeida</h3>
+                  <span class="position">Empresário</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="400">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>O cuidado com detalhes e a criatividade fazem toda a diferença.
+                Nosso perfil ficou muito mais profissional depois das artes.</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="assets/img/person/person-f-9.webp" alt="Cliente">
+                </div>
+                <div class="client-details">
+                  <h3>Juliana Santos</h3>
+                  <span class="position">Social Media</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>Trabalho moderno, alinhado às tendências e com excelente impacto visual.
+                Com certeza continuaremos a parceria.</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="assets/img/person/person-m-13.webp" alt="Cliente">
+                </div>
+                <div class="client-details">
+                  <h3>Rafael Nogueira</h3>
+                  <span class="position">Criador de Conteúdo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contato</h2>
+        <p>Vamos conversar sobre seu projeto e transformar ideias em soluções visuais criativas.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box">
+              <h3>Informações de Contato</h3>
+              <p>
+                Entre em contato para orçamentos, parcerias ou dúvidas. Será um prazer colaborar no seu próximo projeto.
+              </p>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <a href="https://www.google.com/maps/place/Riach%C3%A3o+do+Jacu%C3%ADpe,+BA,+44640-000/@-11.8036833,-39.3833199,3a,75y,45.14h,88.98t/data=!3m7!1e1!3m5!1sEUEPuN3SnsHBBkK8zcSjKg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D1.017571989594984%26panoid%3DEUEPuN3SnsHBBkK8zcSjKg%26yaw%3D45.140615337373234!7i16384!8i8192!4m15!1m8!3m7!1s0x71486c9c4cf8f65:0x74d93108f1c807f7!2sRiach%C3%A3o+do+Jacu%C3%ADpe,+BA,+44640-000!3b1!8m2!3d-11.8094253!4d-39.3830444!16s%2Fg%2F11bxfwk7nr!3m5!1s0x71486c9c4cf8f65:0x74d93108f1c807f7!8m2!3d-11.8094253!4d-39.3830444!16s%2Fg%2F11bxfwk7nr?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-geo-alt"></i>
+                  </a>
+                </div>
+
+                <div class="content">
+                  <h4>Localização</h4>
+                  <p>Riachão do Jacuípe</p>
+                  <p>Bahia, Brasil</p>
+                </div>
+              </div>
+
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Telefone / WhatsApp</h4>
+                  <p>(75) 9 8369-6314</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>E-mail</h4>
+                  <p>kavlastudio@hotmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form">
+              <h3>Fale Comigo</h3>
+              <p>
+                Preencha o formulário abaixo e retornarei o mais breve possível.
+              </p>
+
+              <form action="forms/contact.php" method="post" class="php-email-form">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Seu nome" required="">
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" name="email" placeholder="Seu e-mail" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Assunto" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Sua mensagem"
+                      required=""></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <div class="loading">Enviando...</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Mensagem enviada com sucesso. Obrigado pelo contato!</div>
+
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span>
+        </p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Cole isso ANTES do fechamento do </body> -->
+
+<!-- Toast Container -->
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- Script do Toast (adicione junto com os outros scripts) -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Script para redes sociais não utilizadas
+    const socialNotUsed = document.querySelectorAll('.social-not-used');
+    
+    socialNotUsed.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        showToast();
+      });
+    });
+
+    function showToast() {
+      const toastContainer = document.getElementById('toastContainer');
+      
+      const toast = document.createElement('div');
+      toast.className = 'custom-toast';
+      toast.innerHTML = `
+        <div class="toast-header-custom">
+          <i class="bi bi-info-circle"></i>
+          Rede Social Indisponível
+        </div>
+        <div class="toast-body-custom">
+          Não utilizo essa rede social para trabalho. 
+          Entre em contato pelo Instagram: <strong>@ricardocannela</strong>
+        </div>
+      `;
+      
+      toastContainer.appendChild(toast);
+      
+      // Remove o toast após 4 segundos
+      setTimeout(() => {
+        toast.classList.add('hide');
+        setTimeout(() => {
+          toast.remove();
+        }, 300);
+      }, 4000);
+    }
+  });
+</script>
+
+</body>
+
+</html>
