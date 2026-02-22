@@ -2611,3 +2611,311 @@ section,
   transform: scale(1.2);
   color: #0d6efd;
 }
+
+/* Substitua a seção Portfolio no final do seu CSS por este código atualizado */
+
+/*-------------------------------------------------------------- 
+# Portfolio Carousel Styles (Sem Filtros)
+--------------------------------------------------------------*/
+.portfolio-carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.portfolio-carousel {
+  display: flex;
+  gap: 20px;
+  animation: scroll-left 45s linear infinite;
+  width: max-content;
+}
+
+/* Pausa a animação ao passar o mouse */
+.portfolio-carousel:hover {
+  animation-play-state: paused;
+}
+
+.portfolio-carousel .portfolio-item {
+  flex: 0 0 350px;
+  width: 350px;
+}
+
+/* Animação de scroll da direita para esquerda */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-350px * 20 - 400px));
+  }
+}
+
+/* Remove os filtros da sidebar completamente */
+.portfolio .filter-sidebar,
+.portfolio .filters-wrapper,
+.portfolio .portfolio-filters {
+  display: none !important;
+}
+
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+  .portfolio-carousel .portfolio-item {
+    flex: 0 0 280px;
+    width: 280px;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-280px * 20 - 400px));
+    }
+  }
+}
+
+/* Estilos do portfolio item */
+.portfolio .portfolio-wrap {
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.portfolio .portfolio-wrap img {
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0) 100%);
+  z-index: 3;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-info .content {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translateY(20px);
+}
+
+.portfolio .portfolio-wrap .portfolio-info .category {
+  display: inline-block;
+  color: var(--accent-color);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: var(--contrast-color);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.portfolio .portfolio-wrap:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio .portfolio-wrap:hover img {
+  transform: scale(1.08);
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info .content {
+  transform: translateY(0);
+}
+
+/* Adicione este CSS após a seção de Portfolio no seu styles.css */
+
+/*-------------------------------------------------------------- 
+# Motion Portfolio Carousel (Vídeos)
+--------------------------------------------------------------*/
+.motion-portfolio {
+  background-color: var(--background-color);
+}
+
+.motion-carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.motion-carousel {
+  display: flex;
+  gap: 20px;
+  animation: scroll-left-motion 35s linear infinite;
+  width: max-content;
+}
+
+/* Pausa a animação ao passar o mouse */
+.motion-carousel:hover {
+  animation-play-state: paused;
+}
+
+.motion-carousel .motion-item {
+  flex: 0 0 350px;
+  width: 350px;
+}
+
+/* Animação de scroll da direita para esquerda - Motion */
+@keyframes scroll-left-motion {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-350px * 12 - 240px)); /* 6 items duplicados = 12 total */
+  }
+}
+
+/* Ajustes para mobile - Motion */
+@media (max-width: 768px) {
+  .motion-carousel .motion-item {
+    flex: 0 0 280px;
+    width: 280px;
+  }
+  
+  @keyframes scroll-left-motion {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-280px * 12 - 240px));
+    }
+  }
+}
+
+/* Estilos dos cards de Motion */
+.motion-portfolio .motion-wrap {
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  background-color: #000;
+}
+
+.motion-portfolio .motion-wrap .motion-video {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/* Overlay de Play */
+.motion-portfolio .motion-wrap .play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: rgba(236, 236, 236, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.motion-portfolio .motion-wrap .play-overlay i {
+  font-size: 40px;
+  color: #310606;
+  margin-left: 5px;
+}
+
+.motion-portfolio .motion-wrap:hover .play-overlay {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Info overlay para Motion */
+.motion-portfolio .motion-wrap .motion-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0) 100%);
+  z-index: 3;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.motion-portfolio .motion-wrap .motion-info .content {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translateY(20px);
+}
+
+.motion-portfolio .motion-wrap .motion-info .category {
+  display: inline-block;
+  color: var(--accent-color);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.motion-portfolio .motion-wrap .motion-info h4 {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+/* Efeitos de hover */
+.motion-portfolio .motion-wrap:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.motion-portfolio .motion-wrap:hover .motion-video {
+  transform: scale(1.05);
+}
+
+.motion-portfolio .motion-wrap:hover .motion-info {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.motion-portfolio .motion-wrap:hover .motion-info .content {
+  transform: translateY(0);
+}
+
+/* Vídeo tocando */
+.motion-portfolio .motion-wrap.playing .play-overlay {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.motion-portfolio .motion-wrap.playing .motion-video {
+  transform: scale(1.02);
+}

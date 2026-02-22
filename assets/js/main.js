@@ -228,3 +228,95 @@
 
 })();
 
+
+// Adicione este código ao final do seu arquivo main.js
+
+/**
+ * Portfolio Carousel Infinito (Sem Filtros)
+ */
+(function() {
+  const portfolioCarousel = document.querySelector('.portfolio-carousel');
+  
+  if (!portfolioCarousel) return;
+
+  // Duplica os items para criar efeito de loop infinito
+  function duplicateItems() {
+    const items = Array.from(portfolioCarousel.querySelectorAll('.portfolio-item'));
+    
+    // Duplica 2 vezes para garantir loop perfeito
+    items.forEach(item => {
+      const clone = item.cloneNode(true);
+      portfolioCarousel.appendChild(clone);
+    });
+  }
+  
+  // Executa a duplicação ao carregar
+  duplicateItems();
+
+})();
+
+// Adicione este código após o código do Portfolio no seu main.js
+
+/**
+ * Motion Carousel com Vídeos (Separado)
+ */
+(function() {
+  const motionCarousel = document.querySelector('.motion-carousel');
+  
+  if (!motionCarousel) return;
+
+  // Duplica os items de vídeo para criar efeito de loop infinito
+  function duplicateMotionItems() {
+    const items = Array.from(motionCarousel.querySelectorAll('.motion-item'));
+    
+    // Duplica 2 vezes para garantir loop perfeito
+    items.forEach(item => {
+      const clone = item.cloneNode(true);
+      motionCarousel.appendChild(clone);
+    });
+  }
+  
+  // Executa a duplicação ao carregar
+  duplicateMotionItems();
+
+  // Sistema de play/pause dos vídeos ao hover
+  function setupVideoControls() {
+    const allMotionWraps = document.querySelectorAll('.motion-wrap');
+    
+    allMotionWraps.forEach(wrap => {
+      const video = wrap.querySelector('.motion-video');
+      
+      if (!video) return;
+
+      // Play ao passar o mouse
+      wrap.addEventListener('mouseenter', function() {
+        video.play().catch(err => console.log('Autoplay prevented:', err));
+        wrap.classList.add('playing');
+      });
+
+      // Pause ao sair o mouse
+      wrap.addEventListener('mouseleave', function() {
+        video.pause();
+        video.currentTime = 0; // Volta ao início
+        wrap.classList.remove('playing');
+      });
+
+      // Click para play/pause também
+      wrap.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        if (video.paused) {
+          video.play().catch(err => console.log('Play prevented:', err));
+          wrap.classList.add('playing');
+        } else {
+          video.pause();
+          wrap.classList.remove('playing');
+        }
+      });
+    });
+  }
+
+  // Aguarda um pouco para garantir que os elementos duplicados estão no DOM
+  setTimeout(setupVideoControls, 100);
+
+})();
