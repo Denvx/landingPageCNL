@@ -241,14 +241,15 @@
 
   // Duplica os items para criar efeito de loop infinito
   function duplicateItems() {
-    const items = Array.from(portfolioCarousel.querySelectorAll('.portfolio-item'));
-    
-    // Duplica 2 vezes para garantir loop perfeito
-    items.forEach(item => {
-      const clone = item.cloneNode(true);
-      portfolioCarousel.appendChild(clone);
-    });
-  }
+  // Seleciona apenas os items originais antes de clonar
+  const items = Array.from(portfolioCarousel.querySelectorAll('.portfolio-item:not([data-clone])'));
+  
+  items.forEach(item => {
+    const clone = item.cloneNode(true);
+    clone.setAttribute('data-clone', 'true'); // marca como clone
+    portfolioCarousel.appendChild(clone);
+  });
+}
   
   // Executa a duplicação ao carregar
   duplicateItems();
